@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ComicPanelView.map&lt;A&gt;(value:fromStart:fromEnd:toStart:toEnd:):ComicPanelView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "fromStart as? CGFloat">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ComicTableViewDataSource.didSetTableView():ComicTableViewDataSource.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ComicPanelGroupTableViewCell.configure(view:):ComicPanelGroupTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
