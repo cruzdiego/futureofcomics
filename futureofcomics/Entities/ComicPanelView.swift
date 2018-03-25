@@ -79,36 +79,37 @@ class ComicPanelView: UIView {
     //MARK: - Private methods
     //MARK: Transform
     private func refreshTransform() {
-        func transformTraslation() -> CGAffineTransform{
+        func translate(transform: CGAffineTransform) -> CGAffineTransform{
             let traslationX = mapCenterY(toStart:traslationStartX,toEnd: traslationEndX) * screenWidth
             let traslationY = mapCenterY(toStart:traslationStartY,toEnd: traslationEndY) * screenHeight
-            return CGAffineTransform(translationX: traslationX, y: traslationY)
+            return transform.translatedBy(x: traslationX, y: traslationY)
         }
         
-        func transformScale() -> CGAffineTransform{
+        func scale(transform: CGAffineTransform) -> CGAffineTransform{
             let scaleX = mapCenterY(toStart:scaleStartX,toEnd: scaleEndX)
             let scaleY = mapCenterY(toStart:scaleStartY,toEnd: scaleEndY)
-            return CGAffineTransform(scaleX: scaleX, y: scaleY)
+            return transform.scaledBy(x: scaleX, y: scaleY)
         }
         
-        func transformRotation() -> CGAffineTransform{
+        func rotate(transform: CGAffineTransform) -> CGAffineTransform{
             let rotationDegrees = mapCenterY(toStart: rotationStartDegrees,toEnd: rotationEndDegrees)
             let rotationAngle = map(value: rotationDegrees, fromStart: -360, fromEnd:360, toStart: -2*CGFloat.pi, toEnd: 2*CGFloat.pi)
-            return CGAffineTransform(rotationAngle: rotationAngle)
+            return transform.rotated(by: rotationAngle)
         }
         
         //
         guard canReact else {
+            layer.zPosition = 0
             transform = CGAffineTransform.identity
             return
         }
         
-        let traslationTransform = transformTraslation()
-        let scaleTransform = transformScale()
-        let rotationTransform = transformRotation()
+        layer.zPosition = 1
+        let translatedTransform = translate(transform: CGAffineTransform.identity)
+        let translatedAndScaledTransform = scale(transform: translatedTransform)
+        let translatedAndScaledAndRotateTransform = rotate(transform: translatedAndScaledTransform)
         
-        let groupTransform = traslationTransform.concatenating(scaleTransform).concatenating(rotationTransform)
-        transform = groupTransform
+        transform = translatedAndScaledAndRotateTransform
     }
     
     //MARK: Util

@@ -11,6 +11,14 @@ import UIKit
 class ComicPanelGroupView: UIView {
     
     //MARK: - Public properties
+    //MARK: IBOutlet
     @IBOutlet var panelViews: [ComicPanelView]?
-    
+    //MARK: Objects
+    public var canReact: Bool {
+        guard let panelViews = panelViews else {
+            return false
+        }
+        
+        return panelViews.contains{$0.canReact}
+    }
 }
