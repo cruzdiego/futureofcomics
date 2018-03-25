@@ -3,6 +3,12 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ComicTableViewDataSource.didSetTableView():ComicTableViewDataSource.swift">
+      </ContextState>
+      <ContextState
+         contextName = "transformScale #1 () in ComicPanelView.refreshTransform():ComicPanelView.swift">
+      </ContextState>
+      <ContextState
          contextName = "ComicPanelView.map&lt;A&gt;(value:fromStart:fromEnd:toStart:toEnd:):ComicPanelView.swift">
          <PersistentStrings>
             <PersistentString
@@ -11,7 +17,24 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ComicTableViewDataSource.didSetTableView():ComicTableViewDataSource.swift">
+         contextName = "translate #1 (transform:) in ComicPanelView.refreshTransform():ComicPanelView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "convert(bounds,to:nil)">
+            </PersistentString>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+            <PersistentString
+               value = "centerY">
+            </PersistentString>
+            <PersistentString
+               value = "UIScreen.main.bounds.midY">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "rotate #1 (transform:) in ComicPanelView.refreshTransform():ComicPanelView.swift">
       </ContextState>
       <ContextState
          contextName = "ComicPanelGroupTableViewCell.configure(view:):ComicPanelGroupTableViewCell.swift">

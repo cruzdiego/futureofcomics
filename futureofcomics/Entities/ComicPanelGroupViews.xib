@@ -6,182 +6,57 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="w6n-Tb-Rap" userLabel="Group" customClass="ComicPanelGroupView" customModule="futureofcomics" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+        <view contentMode="scaleToFill" id="w6n-Tb-Rap" userLabel="View" customClass="ComicPanelGroupView" customModule="futureofcomics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="331"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cpl-Ay-DpX">
-                    <rect key="frame" x="16" y="16" width="343" height="351"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qre-FS-RbN">
-                            <rect key="frame" x="0.0" y="0.0" width="343" height="167.5"/>
-                            <color key="backgroundColor" red="0.0" green="0.70455432829999998" blue="0.97145187850000003" alpha="0.1817744006849315" colorSpace="custom" customColorSpace="displayP3"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWf-mk-myB">
-                            <rect key="frame" x="0.0" y="183.5" width="343" height="167.5"/>
-                            <color key="backgroundColor" red="0.0" green="0.70455432829999998" blue="0.97145187850000003" alpha="0.18177440070000001" colorSpace="custom" customColorSpace="displayP3"/>
-                        </view>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="qre-FS-RbN" firstAttribute="height" secondItem="bWf-mk-myB" secondAttribute="height" id="xfl-LW-tSQ"/>
-                    </constraints>
-                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jl family 1" translatesAutoresizingMaskIntoConstraints="NO" id="cTB-XL-cmT" customClass="ComicPanelView" customModule="futureofcomics" customModuleProvider="target">
+                    <rect key="frame" x="10" y="10" width="359" height="283"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="Zzl-b7-kXZ" firstAttribute="bottom" secondItem="cpl-Ay-DpX" secondAttribute="bottom" constant="8" id="B4j-yT-0RD"/>
-                <constraint firstItem="cpl-Ay-DpX" firstAttribute="top" secondItem="Zzl-b7-kXZ" secondAttribute="top" constant="16" id="EY1-py-L4Y"/>
-                <constraint firstItem="Zzl-b7-kXZ" firstAttribute="trailing" secondItem="cpl-Ay-DpX" secondAttribute="trailing" constant="16" id="HkU-6G-TQy"/>
-                <constraint firstItem="cpl-Ay-DpX" firstAttribute="leading" secondItem="Zzl-b7-kXZ" secondAttribute="leading" constant="16" id="qUW-hN-wR7"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="Zzl-b7-kXZ"/>
-            <point key="canvasLocation" x="31.5" y="-62.5"/>
+            <point key="canvasLocation" x="31.5" y="-84.5"/>
         </view>
-        <view contentMode="scaleToFill" id="mCh-9l-aeV" userLabel="Group" customClass="ComicPanelGroupView" customModule="futureofcomics" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+        <view contentMode="scaleToFill" id="a28-dp-NfU" userLabel="View" customClass="ComicPanelGroupView" customModule="futureofcomics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="331"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Kn-fc-HoN">
-                    <rect key="frame" x="16" y="8" width="343" height="359"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iBg-1o-2f6">
-                            <rect key="frame" x="0.0" y="0.0" width="343" height="163.5"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGI-hh-44y">
-                                    <rect key="frame" x="0.0" y="0.0" width="163.5" height="163.5"/>
-                                    <color key="backgroundColor" red="0.0" green="0.70455432829999998" blue="0.97145187850000003" alpha="0.18177440070000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="WGI-hh-44y" secondAttribute="height" id="Hme-XN-wCk"/>
-                                    </constraints>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CvF-1B-GXO">
-                                    <rect key="frame" x="179.5" y="0.0" width="163.5" height="163.5"/>
-                                    <color key="backgroundColor" red="0.0" green="0.70455432829999998" blue="0.97145187850000003" alpha="0.18177440070000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="CvF-1B-GXO" secondAttribute="height" id="YEb-Ab-tDU"/>
-                                    </constraints>
-                                </view>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="CvF-1B-GXO" firstAttribute="width" secondItem="WGI-hh-44y" secondAttribute="width" id="RGE-8z-iBt"/>
-                                <constraint firstItem="CvF-1B-GXO" firstAttribute="height" secondItem="WGI-hh-44y" secondAttribute="height" id="jpm-em-wrV"/>
-                                <constraint firstItem="CvF-1B-GXO" firstAttribute="width" secondItem="CvF-1B-GXO" secondAttribute="height" id="v7W-SU-sOc"/>
-                            </constraints>
-                        </stackView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2v-Ml-8af">
-                            <rect key="frame" x="0.0" y="179.5" width="343" height="179.5"/>
-                            <color key="backgroundColor" red="0.0" green="0.70455432829999998" blue="0.97145187850000003" alpha="0.18177440070000001" colorSpace="custom" customColorSpace="displayP3"/>
-                        </view>
-                    </subviews>
-                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jl family 4" translatesAutoresizingMaskIntoConstraints="NO" id="YNR-od-EFr" customClass="ComicPanelView" customModule="futureofcomics" customModuleProvider="target">
+                    <rect key="frame" x="189" y="10" width="186" height="283"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="moveXBy">
+                            <real key="value" value="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="scaleBy">
+                            <real key="value" value="1.2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="canReact" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jl family 3" translatesAutoresizingMaskIntoConstraints="NO" id="roA-hc-Lks" customClass="ComicPanelView" customModule="futureofcomics" customModuleProvider="target">
+                    <rect key="frame" x="3" y="10" width="186" height="283"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="4Kn-fc-HoN" firstAttribute="top" secondItem="CLW-DS-rtE" secondAttribute="top" constant="8" id="4nS-bc-IBB"/>
-                <constraint firstItem="4Kn-fc-HoN" firstAttribute="leading" secondItem="CLW-DS-rtE" secondAttribute="leading" constant="16" id="MoZ-S1-oib"/>
-                <constraint firstItem="4Kn-fc-HoN" firstAttribute="trailing" secondItem="CLW-DS-rtE" secondAttribute="trailing" constant="-16" id="tVK-SC-XDk"/>
-                <constraint firstItem="CLW-DS-rtE" firstAttribute="bottom" secondItem="4Kn-fc-HoN" secondAttribute="bottom" constant="8" id="vzT-zd-9ak"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="CLW-DS-rtE"/>
-            <point key="canvasLocation" x="31.5" y="409.5"/>
-        </view>
-        <view contentMode="scaleToFill" id="eRZ-yi-5hT" userLabel="Group" customClass="ComicPanelGroupView" customModule="futureofcomics" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YwV-77-0RA">
-                    <rect key="frame" x="16" y="8" width="343" height="359"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dl3-lB-ltb">
-                            <rect key="frame" x="0.0" y="0.0" width="155.5" height="359"/>
-                            <color key="backgroundColor" red="0.0" green="0.70455432829999998" blue="0.97145187850000003" alpha="0.18177440070000001" colorSpace="custom" customColorSpace="displayP3"/>
-                        </view>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yon-QF-JwJ">
-                            <rect key="frame" x="171.5" y="0.0" width="171.5" height="359"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOE-2P-Tcm">
-                                    <rect key="frame" x="0.0" y="0.0" width="171.5" height="171.5"/>
-                                    <color key="backgroundColor" red="0.0" green="0.70455432829999998" blue="0.97145187850000003" alpha="0.18177440070000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="wOE-2P-Tcm" secondAttribute="height" id="qDe-xs-7bs"/>
-                                    </constraints>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAK-aZ-E76" customClass="ComicPanelView" customModule="futureofcomics" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="187.5" width="171.5" height="171.5"/>
-                                    <color key="backgroundColor" red="0.0" green="0.73333333333333295" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="PAK-aZ-E76" secondAttribute="height" id="1IJ-3b-XxF"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="boolean" keyPath="canReact" value="YES"/>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="moveXBy">
-                                            <real key="value" value="-0.5"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="scaleBy">
-                                            <real key="value" value="1.6000000000000001"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="rotateBy">
-                                            <real key="value" value="45"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </view>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="PAK-aZ-E76" firstAttribute="width" secondItem="PAK-aZ-E76" secondAttribute="height" id="0AP-by-vNb"/>
-                                <constraint firstItem="PAK-aZ-E76" firstAttribute="height" secondItem="wOE-2P-Tcm" secondAttribute="height" id="0kJ-ZT-2ba"/>
-                                <constraint firstItem="PAK-aZ-E76" firstAttribute="width" secondItem="wOE-2P-Tcm" secondAttribute="width" id="ROc-PF-WXU"/>
-                            </constraints>
-                        </stackView>
-                    </subviews>
-                </stackView>
-            </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="Wni-hU-OHw" firstAttribute="bottom" secondItem="YwV-77-0RA" secondAttribute="bottom" constant="8" id="MzM-9k-sGp"/>
-                <constraint firstItem="YwV-77-0RA" firstAttribute="trailing" secondItem="Wni-hU-OHw" secondAttribute="trailing" constant="-16" id="NRp-Jc-gME"/>
-                <constraint firstItem="YwV-77-0RA" firstAttribute="top" secondItem="Wni-hU-OHw" secondAttribute="top" constant="8" id="TZI-nJ-kbT"/>
-                <constraint firstItem="YwV-77-0RA" firstAttribute="leading" secondItem="Wni-hU-OHw" secondAttribute="leading" constant="16" id="Zb7-43-w6r"/>
-            </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="Wni-hU-OHw"/>
-            <connections>
-                <outletCollection property="panelViews" destination="PAK-aZ-E76" collectionClass="NSMutableArray" id="56Z-2K-hZS"/>
-            </connections>
-            <point key="canvasLocation" x="32" y="847"/>
-        </view>
-        <view contentMode="scaleToFill" id="eR4-RA-3TY" userLabel="Group" customClass="ComicPanelGroupView" customModule="futureofcomics" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="u24-a5-vKs">
-                    <rect key="frame" x="16" y="8" width="343" height="359"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKo-Rw-a6m">
-                            <rect key="frame" x="0.0" y="0.0" width="343" height="359"/>
-                            <color key="backgroundColor" red="0.0" green="0.70455432829999998" blue="0.97145187850000003" alpha="0.18177440070000001" colorSpace="custom" customColorSpace="displayP3"/>
-                        </view>
-                    </subviews>
-                </stackView>
-            </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="ZmH-bt-48b" firstAttribute="bottom" secondItem="u24-a5-vKs" secondAttribute="bottom" constant="8" id="3nW-0J-Efi"/>
-                <constraint firstItem="u24-a5-vKs" firstAttribute="leading" secondItem="ZmH-bt-48b" secondAttribute="leading" constant="16" id="JDU-MB-XZk"/>
-                <constraint firstItem="u24-a5-vKs" firstAttribute="top" secondItem="ZmH-bt-48b" secondAttribute="top" constant="8" id="KvR-5L-mft"/>
-                <constraint firstItem="u24-a5-vKs" firstAttribute="trailing" secondItem="ZmH-bt-48b" secondAttribute="trailing" constant="-16" id="uus-ut-caT"/>
-            </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="ZmH-bt-48b"/>
-            <point key="canvasLocation" x="32" y="1297"/>
+            <viewLayoutGuide key="safeArea" id="wgs-tQ-XxS"/>
+            <point key="canvasLocation" x="31.5" y="314.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="jl family 1" width="819" height="639"/>
+        <image name="jl family 3" width="198" height="301"/>
+        <image name="jl family 4" width="200" height="305"/>
+    </resources>
 </document>

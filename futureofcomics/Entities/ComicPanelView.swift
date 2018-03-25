@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ComicPanelView: UIView {
+class ComicPanelView: UIImageView {
     //MARK: - Public properties
     @IBInspectable var canReact: Bool = true
     //MARK: Traslation
     @IBInspectable var moveXBy: CGFloat = 0
-    @IBInspectable var moveYBy: CGFloat = 0
+    //@IBInspectable var moveYBy: CGFloat = 0
     @IBInspectable var scaleBy: CGFloat = 1
     @IBInspectable var rotateBy: CGFloat = 0
     
@@ -41,7 +41,7 @@ class ComicPanelView: UIView {
         return max(-1,min(1,moveXBy))
     }
     private var traslationEndY: CGFloat {
-        return max(-1,min(1,moveYBy))
+        return 0//max(-1,min(1,moveYBy))
     }
     //MARK: Scale
     private let scaleStartX: CGFloat = 1

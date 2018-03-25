@@ -13,6 +13,19 @@ class ComicPanelGroupTableViewCell: UITableViewCell {
     private var panelGroupView: ComicPanelGroupView?
     
     //MARK: - Public methods
+    //MARK: UITableViewCell
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        contentView.autoresizingMask = .flexibleHeight
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        for subview in contentView.subviews {
+            subview.removeFromSuperview()
+        }
+    }
+    
     public func configure(view: ComicPanelGroupView) {
         panelGroupView = view
         //Insert
@@ -23,7 +36,7 @@ class ComicPanelGroupTableViewCell: UITableViewCell {
         view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         view.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         view.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
-        view.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: view.frame.height/view.frame.width).isActive = true
+        //view.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: view.frame.height/view.frame.width).isActive = true
     }
     
     public func react() {

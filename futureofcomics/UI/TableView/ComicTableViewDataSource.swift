@@ -63,8 +63,8 @@ class ComicTableViewDataSource: NSObject {
     //MARK: - Private methods
     //MARK: didSet
     private func didSetTableView() {
-        tableView?.estimatedRowHeight = 400
-        tableView?.rowHeight = UITableViewAutomaticDimension
+        //tableView?.estimatedRowHeight = 400
+        //tableView?.rowHeight = UITableViewAutomaticDimension
     }
     
     private func didSetItems() {
@@ -116,6 +116,15 @@ extension ComicTableViewDataSource: UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        guard indexPath.row < items.count else {
+            return 0.0
+        }
+        
+        let item = items[indexPath.row]
+        return item.frame.height
     }
 }
 
