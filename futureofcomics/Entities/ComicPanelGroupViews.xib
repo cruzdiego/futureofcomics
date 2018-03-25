@@ -122,17 +122,14 @@
                                         <constraint firstAttribute="width" secondItem="PAK-aZ-E76" secondAttribute="height" id="1IJ-3b-XxF"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="traslationEndX">
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="canReact" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="moveXBy">
                                             <real key="value" value="-0.5"/>
                                         </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="boolean" keyPath="canReact" value="YES"/>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="scaleEndX">
+                                        <userDefinedRuntimeAttribute type="number" keyPath="scaleBy">
                                             <real key="value" value="1.6000000000000001"/>
                                         </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="scaleEndY">
-                                            <real key="value" value="1.6000000000000001"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="rotationEndDegrees">
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rotateBy">
                                             <real key="value" value="45"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>

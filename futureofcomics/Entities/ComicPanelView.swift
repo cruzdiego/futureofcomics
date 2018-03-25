@@ -12,33 +12,10 @@ class ComicPanelView: UIView {
     //MARK: - Public properties
     @IBInspectable var canReact: Bool = true
     //MARK: Traslation
-    @IBInspectable var traslationEndX: CGFloat = 0 {
-        didSet {
-            traslationEndX = max(-1,min(1,traslationEndX))
-        }
-    }
-    @IBInspectable var traslationEndY: CGFloat = 0 {
-        didSet {
-            traslationEndX = max(-1,min(1,traslationEndX))
-        }
-    }
-    //MARK: Scale
-    @IBInspectable var scaleEndX: CGFloat = 1 {
-        didSet {
-            scaleEndX = max(0,scaleEndX)
-        }
-    }
-    @IBInspectable var scaleEndY: CGFloat = 1 {
-        didSet {
-            scaleEndY = max(0,scaleEndY)
-        }
-    }
-    //MARK: Rotation
-    @IBInspectable var rotationEndDegrees: CGFloat = 0 {
-        didSet {
-            rotationEndDegrees = max(-360,min(360,rotationEndDegrees))
-        }
-    }
+    @IBInspectable var moveXBy: CGFloat = 0
+    @IBInspectable var moveYBy: CGFloat = 0
+    @IBInspectable var scaleBy: CGFloat = 1
+    @IBInspectable var rotateBy: CGFloat = 0
     
     //MARK: - Private properties
     //MARK: General
@@ -61,11 +38,26 @@ class ComicPanelView: UIView {
     //MARK: Traslation
     private let traslationStartX: CGFloat = 0
     private let traslationStartY: CGFloat = 0
+    private var traslationEndX: CGFloat {
+        return max(-1,min(1,moveXBy))
+    }
+    private var traslationEndY: CGFloat {
+        return max(-1,min(1,moveYBy))
+    }
     //MARK: Scale
     private let scaleStartX: CGFloat = 1
     private let scaleStartY: CGFloat = 1
+    private var scaleEndX: CGFloat {
+        return max(0,scaleBy)
+    }
+    private var scaleEndY: CGFloat {
+        return max(0,scaleBy)
+    }
     //MARK: Rotation
     private let rotationStartDegrees:CGFloat = 0
+    private var rotationEndDegrees: CGFloat {
+        return max(-360,min(360,rotateBy))
+    }
     
     //MARK: - Public methods
     public func react() {
