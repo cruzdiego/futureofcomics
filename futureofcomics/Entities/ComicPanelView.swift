@@ -23,11 +23,10 @@ class ComicPanelView: UIView {
         return convert(bounds, to: nil).midY
     }
     private var startCenterY: CGFloat {
-        return UIScreen.main.bounds.midY
+        return UIScreen.main.bounds.midY + UIScreen.main.bounds.height/4
     }
     private var endCenterY: CGFloat {
-        let maxDifference = UIScreen.main.bounds.height/4
-        return startCenterY - maxDifference
+        return UIScreen.main.bounds.midY - UIScreen.main.bounds.height/4
     }
     private var screenWidth: CGFloat {
         return UIScreen.main.bounds.width
