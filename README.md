@@ -1,6 +1,6 @@
 # Future of Comics: Creator Tool
 
-![GIF with interactive comic book]()
+![Demo Comic](READMEassets/futureofcomics-final.gif)
 
 ## Introduction
 
@@ -28,25 +28,23 @@ This Creator Tool is an open source project built for Xcode that makes easy to b
 
 Double click *futureofcomics.xcodeproj* file to open it on Xcode. 
 
-![]()
+![Xcode](READMEassets/futureofcomics-creatortool.png)
 
 Drag and drop them to the "Artwork" folder inside Assets.xcassets, from the left sidebar of Xcode. Make sure all your files have unique names.
 
-![]()
+![Artwork](READMEassets/futureofcomics-insertartwork.png)
 
 ## 2. Laying out your comics
 
 Select ComicCanvas.xib from the left sidebar. You'll find an example panel already placed.
 
-![]()
-
 Duplicate this panel with either CMD+C->CMD+V or by holding OPTION and dragging.
 
-![]()
+![Canvas](READMEassets/futureofcomics-addtocanvas.png)
 
 On the right panel, write the panel's name you want to show. You can also select one from the list.
 
-![]()
+![Add to Canvas](READMEassets/futureofcomics-changename.png)
 
 You can change the position and size of your panel as well.
 
@@ -56,7 +54,7 @@ Select one panel on ComicCanvas.xib. On the right sidebar, make sure the 4th tab
 
 You'll find 3 properties you can play with:
 
-![]()
+![Xcode properties](READMEassets/futureofcomics-properties.png)
 
 - **Move By**: Specify the final number of points (in a *x,y* format) you want the panel to move when the user scrolls. Example values: 40,0   23,100   -50,10  
 - **Scale By**: Specify the final scale (being 1 the original scale) the panel should have when the user scrolls. Example values: 0.5   1.8   2.0
@@ -64,7 +62,7 @@ You'll find 3 properties you can play with:
 
 All the final values will be reached **continuously** on scrolling.
 
-![GIF]()
+![Demo Comic](READMEassets/futureofcomics-final.gif)
 
 ## 4. Preview your comic
 
