@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="w6n-Tb-Rap" userLabel="View" customClass="ComicPanelGroupView" customModule="futureofcomics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1798"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="fc-panel1" translatesAutoresizingMaskIntoConstraints="NO" id="n4w-iJ-HXO">
+                    <rect key="frame" x="10" y="13" width="351" height="227"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="fc-panel2" translatesAutoresizingMaskIntoConstraints="NO" id="joZ-8f-1bt">
+                    <rect key="frame" x="9" y="255" width="351" height="227"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="fc-panel4" translatesAutoresizingMaskIntoConstraints="NO" id="CU7-dW-hYh">
+                    <rect key="frame" x="189" y="498" width="170" height="227"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="fc-panel3" translatesAutoresizingMaskIntoConstraints="NO" id="0hS-vm-AqC">
+                    <rect key="frame" x="8" y="498" width="170" height="227"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="fc-panel5" translatesAutoresizingMaskIntoConstraints="NO" id="Uy9-Kw-hmO">
+                    <rect key="frame" x="8" y="733" width="170" height="227"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="fc-panel6" translatesAutoresizingMaskIntoConstraints="NO" id="1vn-kj-gV0">
+                    <rect key="frame" x="189" y="733" width="170" height="227"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="fc-panel7" translatesAutoresizingMaskIntoConstraints="NO" id="8GR-Tg-iVl">
+                    <rect key="frame" x="8" y="968" width="170" height="227"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Fly" translatesAutoresizingMaskIntoConstraints="NO" id="WYz-wa-Ljf" customClass="ComicPanelView" customModule="futureofcomics" customModuleProvider="target">
+                    <rect key="frame" x="189" y="968" width="39" height="227"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="scaleBy">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rotateBy">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="moveBy" value="(131,0)"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="fc-panel8" translatesAutoresizingMaskIntoConstraints="NO" id="pR8-dV-fQN">
+                    <rect key="frame" x="9" y="1203" width="170" height="227"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Angry" translatesAutoresizingMaskIntoConstraints="NO" id="mzf-FB-F7W">
+                    <rect key="frame" x="10" y="1440" width="170" height="227"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Zzl-b7-kXZ"/>
+            <point key="canvasLocation" x="-23.5" y="619"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Angry" width="170" height="227"/>
+        <image name="Fly" width="39" height="227"/>
+        <image name="fc-panel1" width="351" height="227"/>
+        <image name="fc-panel2" width="351" height="227"/>
+        <image name="fc-panel3" width="170" height="227"/>
+        <image name="fc-panel4" width="170" height="227"/>
+        <image name="fc-panel5" width="170" height="227"/>
+        <image name="fc-panel6" width="170" height="227"/>
+        <image name="fc-panel7" width="170" height="227"/>
+        <image name="fc-panel8" width="170" height="227"/>
+    </resources>
+</document>

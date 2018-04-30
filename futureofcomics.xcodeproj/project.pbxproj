@@ -12,8 +12,8 @@
 		086FC9612040BD68005FEA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086FC95F2040BD68005FEA43 /* Main.storyboard */; };
 		086FC9632040BD68005FEA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086FC9622040BD68005FEA43 /* Assets.xcassets */; };
 		086FC9662040BD68005FEA43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086FC9642040BD68005FEA43 /* LaunchScreen.storyboard */; };
-		086FC96F2040C475005FEA43 /* ComicPanelGroupViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086FC96E2040C475005FEA43 /* ComicPanelGroupViews.xib */; };
-		086FC9722040C82F005FEA43 /* ComicPanelGroupViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086FC9712040C82F005FEA43 /* ComicPanelGroupViews.swift */; };
+		086FC96F2040C475005FEA43 /* ComicCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086FC96E2040C475005FEA43 /* ComicCanvas.xib */; };
+		086FC9722040C82F005FEA43 /* ComicCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086FC9712040C82F005FEA43 /* ComicCanvas.swift */; };
 		086FC9742040CAF6005FEA43 /* ComicPanelGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086FC9732040CAF6005FEA43 /* ComicPanelGroupView.swift */; };
 		086FC9792040CC76005FEA43 /* ComicTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086FC9782040CC76005FEA43 /* ComicTableViewDataSource.swift */; };
 		086FC97B2040CF64005FEA43 /* ComicPanelGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086FC97A2040CF64005FEA43 /* ComicPanelGroupTableViewCell.swift */; };
@@ -28,8 +28,8 @@
 		086FC9622040BD68005FEA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		086FC9652040BD68005FEA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		086FC9672040BD68005FEA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		086FC96E2040C475005FEA43 /* ComicPanelGroupViews.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicPanelGroupViews.xib; sourceTree = "<group>"; };
-		086FC9712040C82F005FEA43 /* ComicPanelGroupViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicPanelGroupViews.swift; sourceTree = "<group>"; };
+		086FC96E2040C475005FEA43 /* ComicCanvas.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCanvas.xib; sourceTree = "<group>"; };
+		086FC9712040C82F005FEA43 /* ComicCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCanvas.swift; sourceTree = "<group>"; };
 		086FC9732040CAF6005FEA43 /* ComicPanelGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicPanelGroupView.swift; sourceTree = "<group>"; };
 		086FC9782040CC76005FEA43 /* ComicTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicTableViewDataSource.swift; sourceTree = "<group>"; };
 		086FC97A2040CF64005FEA43 /* ComicPanelGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicPanelGroupTableViewCell.swift; sourceTree = "<group>"; };
@@ -47,6 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080324AF20975CFD009EC88D /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				086FC95B2040BD68005FEA43 /* AppDelegate.swift */,
+				086FC95F2040BD68005FEA43 /* Main.storyboard */,
+				086FC9642040BD68005FEA43 /* LaunchScreen.storyboard */,
+				086FC9762040CC30005FEA43 /* Entities */,
+				086FC9772040CC36005FEA43 /* UI */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
 		086FC94F2040BD68005FEA43 = {
 			isa = PBXGroup;
 			children = (
@@ -66,12 +78,9 @@
 		086FC95A2040BD68005FEA43 /* futureofcomics */ = {
 			isa = PBXGroup;
 			children = (
-				086FC9762040CC30005FEA43 /* Entities */,
-				086FC9772040CC36005FEA43 /* UI */,
-				086FC95B2040BD68005FEA43 /* AppDelegate.swift */,
-				086FC95F2040BD68005FEA43 /* Main.storyboard */,
+				086FC96E2040C475005FEA43 /* ComicCanvas.xib */,
 				086FC9622040BD68005FEA43 /* Assets.xcassets */,
-				086FC9642040BD68005FEA43 /* LaunchScreen.storyboard */,
+				080324AF20975CFD009EC88D /* Internal */,
 				086FC9672040BD68005FEA43 /* Info.plist */,
 			);
 			path = futureofcomics;
@@ -89,8 +98,7 @@
 		086FC9762040CC30005FEA43 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				086FC9712040C82F005FEA43 /* ComicPanelGroupViews.swift */,
-				086FC96E2040C475005FEA43 /* ComicPanelGroupViews.xib */,
+				086FC9712040C82F005FEA43 /* ComicCanvas.swift */,
 				086FC9732040CAF6005FEA43 /* ComicPanelGroupView.swift */,
 				086FC97E2040DC72005FEA43 /* ComicPanelView.swift */,
 			);
@@ -168,7 +176,7 @@
 				086FC9662040BD68005FEA43 /* LaunchScreen.storyboard in Resources */,
 				086FC9632040BD68005FEA43 /* Assets.xcassets in Resources */,
 				086FC9612040BD68005FEA43 /* Main.storyboard in Resources */,
-				086FC96F2040C475005FEA43 /* ComicPanelGroupViews.xib in Resources */,
+				086FC96F2040C475005FEA43 /* ComicCanvas.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +190,7 @@
 				086FC9742040CAF6005FEA43 /* ComicPanelGroupView.swift in Sources */,
 				086FC95E2040BD68005FEA43 /* ComicViewController.swift in Sources */,
 				086FC97B2040CF64005FEA43 /* ComicPanelGroupTableViewCell.swift in Sources */,
-				086FC9722040C82F005FEA43 /* ComicPanelGroupViews.swift in Sources */,
+				086FC9722040C82F005FEA43 /* ComicCanvas.swift in Sources */,
 				086FC97F2040DC72005FEA43 /* ComicPanelView.swift in Sources */,
 				086FC9792040CC76005FEA43 /* ComicTableViewDataSource.swift in Sources */,
 				086FC95C2040BD68005FEA43 /* AppDelegate.swift in Sources */,
